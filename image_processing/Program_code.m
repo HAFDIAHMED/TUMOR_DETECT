@@ -1,14 +1,14 @@
 % % % % % % % % load Frequency % % % % % % % % % % % % % 
-
-load C:\Users\ahafdi\Desktop\matlab\imageAhmed\Image 1\IFFT_Without.txt
-load C:\Users\ahafdi\Desktop\matlab\imageAhmed\Image 1\reavectumhfss.txt
-load C:\Users\ahafdi\Desktop\matlab\imageAhmed\Image 1\imavectumhfss.txt
-load C:\Users\ahafdi\Desktop\matlab\imageAhmed\Image 1\resanstumhfss.txt
-load C:\Users\ahafdi\Desktop\matlab\imageAhmed\Image 1\imsanstumhfss.txt
-load C:\Users\ahafdi\Desktop\matlab\imageAhmed\Image 1\reavectumhfss1.txt
-load C:\Users\ahafdi\Desktop\matlab\imageAhmed\Image 1\imavectumhfss1.txt
-load C:\Users\ahafdi\Desktop\matlab\imageAhmed\Image 1\resanstumhfss1.txt
-load C:\Users\ahafdi\Desktop\matlab\imageAhmed\Image 1\imsanstumhfss1.txt
+% C:\Users\ahafdi\Desktop\trash\TUMOR_DETECT\image_processing\
+load IFFT_Without.txt
+load reavectumhfss.txt
+load imavectumhfss.txt
+load resanstumhfss.txt
+load imsanstumhfss.txt
+load reavectumhfss1.txt
+load imavectumhfss1.txt
+load resanstumhfss1.txt
+load imsanstumhfss1.txt
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%Save avec tum %%%%%%%%%%%%%%%%%%%%%%%%%%%
 Freq=imavectumhfss(:,1);
