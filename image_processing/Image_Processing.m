@@ -120,6 +120,8 @@ end
 
 RemovedSignal = angle((New_With));
 
+
+
 % % % % DISTANCE DE L'EMPLACEMENT D'ANTENNE DE CHAQUE POINT FOCAL % % % % %
 
 [a,b] = meshgrid(linspace(0,10,5),linspace(0,10,5));
@@ -131,13 +133,24 @@ MAX = 256;
 X=X(:);
 Y=Y(:);
 Distance = zeros(length(X),cols);
+antenaceDistances=zeros(length(X),cols);
+%%%  remplir les distances des antenna %%%
+col=1;
+for k=1:cols
+    for m = 1:length(X)
+      antenaceDistances(m,k) = 0.0 + (1.0-0.0).*rand(1);
+    end 
+end
 
+%%%  calculer les distances %%%
 for k = 1:cols
     for m = 1:length(X)
       D1 = sqrt((AntennaLocations_x(k) - X(m) )^2 + (AntennaLocations_y(k) - Y(m) )^2);
       Distance(m,k) = sqrt(D1^2 + AntennaDistance^2);
+      %Distance(m,k) = sqrt(D1^2 + antenaceDistances(m,k)^2);
     end 
 end
+
 
 % % VALEURS TEMPORELLES POUR LA DISTANCE D'ANTENNE DE CHAQUE POINT FOCAL% %
 
